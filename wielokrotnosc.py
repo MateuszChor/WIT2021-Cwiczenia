@@ -1,10 +1,10 @@
-a=24
-b=36
-i=2
-i2=1
+b = 36
+a = 24
 
-wynik=a%b
-print(wynik)
+while (b!=0):
+    pom=b
+    b=a%b
+    a=pom
 
-
+print(a)
     
