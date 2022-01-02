@@ -1,7 +1,7 @@
 import  unittest
 import  Zad1_skrypt as Skrypt
 
-class TestEmployee(unittest.TestCase):
+class TestIssues(unittest.TestCase):
 
     def test_add(self):
         result_add = Skrypt.add(10, 5)
