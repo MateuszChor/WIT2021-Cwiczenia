@@ -15,8 +15,10 @@ class TestIssues(unittest.TestCase):
     def test_divide(self):
         result_divide = Skrypt.divide(10, 5)
         self.assertEqual(result_divide, 2)
-        self.assertRaises(ValueError,Skrypt.divide(10,0))
-
+        #self.assertRaises(ValueError,Skrypt.divide(10,0))
+    def test_isnumeric(self):
+        self.assertEqual(Skrypt.is_numeric(10),True)
+        self.assertRaises(ValueError,Skrypt.is_numeric("a"))
 
 if __name__ == '__main__':
     unittest.main()
